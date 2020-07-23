@@ -1,4 +1,4 @@
-# word-counter
+# Word Counter App
 
 ## Project setup
 ```
