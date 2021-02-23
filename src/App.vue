@@ -20,7 +20,7 @@ export default {
   },
   methods: {
     countWords(event) {
-      const words = event.match(new RegExp("[\\wçáàãâéêóõôúíñ\\s]", 'gi')).join('').split(" ").map(value => value.toLowerCase())
+      const words = event.match(new RegExp(/([\wçáàãâéêóõôúíñ]+)/, 'gi')).map(value => value.toLowerCase())
       const uniqueWords = words.filter((value, index, array) => array.indexOf(value) === index)
       this.wordsCounterArray = uniqueWords.map(value => ({word: value, count: words.filter(subValue => value === subValue).length}))
     },
