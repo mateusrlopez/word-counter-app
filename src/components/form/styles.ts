@@ -4,33 +4,27 @@ export const FormContainer = tw.div`
   flex
   flex-col
   items-center
-  py-6
-  px-3
+  p-6
+  bg-white
+  h-80
+  w-188
   rounded
-  h-112.5
-  w-137.5
-`;
-
-export const FormTitle = tw.h1`
-  text-center
-  text-5xl
-  font-extrabold
 `;
 
 export const FormInput = tw.textarea`
   rounded
   outline-none
   p-3
-  mt-auto
-  h-48
   w-full
+  h-52
   resize-none
+  border
+  border-purple-500
 `;
 
 export const FormButtonBar = tw.div`
-  py-2.5
-  mt-auto
   w-full
+  mt-6
 `;
 
 export const FormButton = tw.button`
@@ -40,5 +34,11 @@ export const FormButton = tw.button`
   cursor-pointer
   font-bold
   mr-1.5
+  bg-purple-600
+  hover:bg-purple-700
+  transition
+  ease-in-out
+  duration-200
+  text-white
   focus:outline-none
 `;

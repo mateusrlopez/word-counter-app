@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 import { SAMPLE_TEXT } from '../../utils/constants';
 import { FormProps, WordCount } from '../../utils/interfaces';
-import { FormButton, FormButtonBar, FormContainer, FormInput, FormTitle } from './styles';
+import { FormButton, FormButtonBar, FormContainer, FormInput } from './styles';
 
 const Form: React.FC<FormProps> = ({ setWordCountArray }) => {
   const [inputText, setInputText] = useState('');
@@ -34,8 +34,6 @@ const Form: React.FC<FormProps> = ({ setWordCountArray }) => {
 
   return (
     <FormContainer>
-      <FormTitle>Word Counter</FormTitle>
-
       <FormInput
         placeholder='Insert the text here'
         value={inputText}
