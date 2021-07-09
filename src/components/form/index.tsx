@@ -8,7 +8,7 @@ const Form: React.FC<FormProps> = ({ setWordCountArray }) => {
   const [inputText, setInputText] = useState('');
 
   function countWords(): void {
-    const matches = inputText.match(new RegExp(/([\wçáàãâéêóõôúíñ]+)/, 'gi'));
+    const matches = inputText.match(new RegExp(/([\wçáàãâéêóõôúíñ-]+)/, 'gi'));
 
     if (!matches) return;
 

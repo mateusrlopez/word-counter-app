@@ -2,8 +2,8 @@ import tw from 'twin.macro';
 
 export const TableContainer = tw.div`
   mt-10
-  width[750px]
-  p-4
+  w-188
+  p-6
   bg-white
   rounded
 `;
@@ -22,6 +22,7 @@ export const TableHeader = tw.tr`
 `;
 
 export const TableRow = tw.tr`
+  bg-gray-50
 `;
 
 export const TableItem = tw.td`
