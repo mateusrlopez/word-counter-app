@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
-import { SAMPLE_TEXT } from '../../utils/constants';
-import { FormProps, WordCount } from '../../utils/interfaces';
+import { SAMPLE_TEXT } from '../../constants';
+import { FormProps, WordCount } from '../../interfaces';
 import { FormButton, FormButtonBar, FormContainer, FormInput } from './styles';
 
 const Form: React.FC<FormProps> = ({ setWordCountArray }) => {

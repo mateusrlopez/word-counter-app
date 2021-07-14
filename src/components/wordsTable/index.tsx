@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { WordCountTableProps } from '../../utils/interfaces';
+import { WordCountTableProps } from '../../interfaces';
 import { Table, TableContainer, TableHeader, TableHeaderItem, TableItem, TableRow } from './styles';
 
 const WordsTable: React.FC<WordCountTableProps> = ({ wordCountArray }) => {
